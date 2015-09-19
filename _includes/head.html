@@ -1,0 +1,38 @@
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="{{ "/assets/components/AdminLTE/bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{ "/assets/components/components-font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{ "/assets/components/AdminLTE/dist/css/AdminLTE.min.css" | prepend: site.baseurl }}">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="{{ "/assets/components/AdminLTE/dist/css/skins/skin-purple-light.min.css" | prepend: site.baseurl }}">
+    
+    <!-- jQuery 1.11.3 -->
+    <script src="{{ "/assets/components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="{{ "/assets/components/AdminLTE/bootstrap/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    <!-- SlimScroll -->
+    <script src="{{ "/assets/components/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js" | prepend: site.baseurl }}"></script>
+    <!-- FastClick -->
+    <script src="{{ "/assets/components/AdminLTE/plugins/fastclick/fastclick.min.js" | prepend: site.baseurl }}"></script>
+    <!-- AdminLTE App -->
+    <script src="{{ "/assets/components/AdminLTE/dist/js/app.min.js" | prepend: site.baseurl }}"></script>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->

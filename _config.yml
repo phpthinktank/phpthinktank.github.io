@@ -8,10 +8,14 @@ url: "http://marco-bunde.de"
 twitter_username: makk_eightbit
 github_username:  mbunge
 facebook_username:  marco.bunge.dev
+highlighter_theme: solarized
 
 # Build settings
+highlighter: rouge
 markdown: kramdown
-highlighter: pygments
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 permalink: pretty
 paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md", "assets/components/AdminLTE/pages"]

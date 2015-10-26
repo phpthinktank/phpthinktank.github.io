@@ -9,30 +9,22 @@ bodyclass: "login-page"
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">This is a collection of use framework agnostic packages developed by <a href="http://www.marco-bunge.com"></a></p>
-
     <div class="row">
+      <p class="col-12">This is a collection of framework agnostic packages developed by <a href="http://www.marco-bunge.com"></a></p>
       <div class="col-12">
       {% for package in site.data.packages %}
         <article>
-          <h1><a href="{{package.link}}">{{package.name}}</a></h1>
-          <p><a href="">{{package.description}}</a></p>
-          <span class="label label-primary">{{package.state}}</span>
+          <h1><a href="{{package.link}}" target="blank">{{package.name}}</a></h1>
+          <p><a href="{{package.link}}" target="blank">{{package.description}}</a><span class="label label-primary">{{package.state}}</span></p>
         </article>
       {% endfor %}
       </div>
       <div class="col-12">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-              <a target="_blank" href="https://twitter.com/makk_eightbit"><i class="fa fa-twitter"></i></a>
-          </li>
-          <li>
-              <a target="_blank" href="https://facebook.com/marco.bunge.dev"><i class="fa fa-facebook"></i></a>
-          </li>
-          <li>
-              <a target="_blank" href="https://github.com/mbunge"><i class="fa fa-github"></i></a>
-          </li>
-        </ul>
+        <div class="social-auth-links">
+          <a href="https://twitter.com/makk_eightbit" class="btn btn-social btn-twitter btn-flat"><i class="fa fa-twitter"></i></a>
+          <a href="https://facebook.com/marco.bunge.dev" class="btn btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i></a>
+          <a href="https://github.com/phpthinktank" class="btn btn-social btn-twitter btn-flat"><i class="fa fa-github"></i></a>
+        </div>
       </div>
       <!-- /.col -->
     </div>

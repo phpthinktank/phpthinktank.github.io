@@ -15,7 +15,7 @@ bodyclass: "login-page"
       {% for package in site.data.packages %}
         <article>
           <h1><a class="text-navy" href="{{package.link}}" target="blank">{{package.name}}</a></h1>
-          <p><a class="text-black" href="{{package.link}}" target="blank">{{package.description}}</a><span class="label label-{% if package.state == "stable" %}success{% elsif package.state == "development" %}warning{% else %}default{% endif %}">{{package.state}}</span></p>
+          <p><a class="text-black" href="{{package.link}}" target="blank">{{package.description}}</a> <span class="label label-{% if package.state == "stable" %}success{% elsif package.state == "development" %}warning{% else %}default{% endif %}">{{package.state}}</span></p>
         </article>
       {% endfor %}
       </div>
@@ -23,7 +23,7 @@ bodyclass: "login-page"
         <div class="social-auth-links">
           <a href="https://twitter.com/makk_eightbit" class="btn btn-block btn-social btn-twitter btn-flat"><i class="fa fa-twitter"></i> @makk_eightbit</a>
           <a href="https://facebook.com/marco.bunge.dev" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> @marco.bunge.dev</a>
-          <a href="https://github.com/phpthinktank" class="btn btn-block btn-social btn-twitter btn-flat"><i class="fa fa-github"></i> phpthinktank</a>
+          <a href="https://github.com/phpthinktank" class="btn btn-block btn-social btn-github btn-flat"><i class="fa fa-github"></i> phpthinktank</a>
         </div>
       </div>
       <!-- /.col -->

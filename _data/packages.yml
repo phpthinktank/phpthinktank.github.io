@@ -1,0 +1,9 @@
+- name: blast/facades
+  description: Represent your dependency as generic facade and reduce complexity
+  link: https://packagist.org/packages/blast/facades
+  state: stable
+  
+- name: blast/config
+  description: Framework agnostic configuration package.
+  link: https://github.com/phpthinktank/blast-config
+  state: development

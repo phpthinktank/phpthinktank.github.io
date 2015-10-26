@@ -14,8 +14,8 @@ bodyclass: "login-page"
       <div class="col-12">
       {% for package in site.data.packages %}
         <article>
-          <h1><a class="text-navy" href="{{package.link}}" target="blank">{{package.name}}</a></h1>
-          <p><a class="text-black" href="{{package.link}}" target="blank">{{package.description}}</a> <span class="label label-{% if package.state == "stable" %}success{% elsif package.state == "development" %}warning{% else %}default{% endif %}">{{package.state}}</span></p>
+          <h1><a class="text-purple" href="{{package.link}}" target="blank">{{package.name}}</a></h1>
+          <p><a class="text-purple" href="{{package.link}}" target="blank">{{package.description}}</a> <span class="label label-{% if package.state == "stable" %}success{% elsif package.state == "development" %}warning{% else %}default{% endif %}">{{package.state}}</span></p>
         </article>
       {% endfor %}
       </div>

@@ -15,8 +15,9 @@ bodyclass: "login-page"
       <div class="col-12">
       {% for package in site.data.packages %}
         <article>
-          <h1><a href=""></a></h1>
-          <h2><a href=""></a></h2>
+          <h1><a href="{{package.link}}">{{package.name}}</a></h1>
+          <p><a href="">{{package.description}}</a></p>
+          <span class="label label-primary">{{package.state}}</span>
         </article>
       {% endfor %}
       </div>

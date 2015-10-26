@@ -1,8 +1,8 @@
 # Site settings
-title: Marco Bunge
+title: PHP ThinkTank
 header-img: img/default.jpg
 email: mjls@web.de
-description: "Blogging about Software, Frameworks and Workflows. Code documentation of Furnace"
+description: "This is a collection of framework agnostic packages developed by Marco Bunge"
 baseurl: ""
 url: "http://marco-bunde.de"
 twitter_username: makk_eightbit

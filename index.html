@@ -1,55 +1,40 @@
 ---
-layout: page
-description: "code and blues"
-bodyclass: "hold-transition login-page"
+layout: blank
+bodyclass: "login-page"
 ---
 
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href="/"><b>PHP</b>ThinkTank</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
+    <p class="login-box-msg">This is a collection of use framework agnostic packages developed by <a href="http://www.marco-bunge.com"></a></p>
 
-    <form action="../../index2.html" method="post">
-      <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
-        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+    <div class="row">
+      <div class="col-12">
+      {% for package in site.data.packages %}
+        <article>
+          <h1><a href=""></a></h1>
+          <h2><a href=""></a></h2>
+        </article>
+      {% endfor %}
       </div>
-      <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      <div class="col-12">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+              <a target="_blank" href="https://twitter.com/makk_eightbit"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+              <a target="_blank" href="https://facebook.com/marco.bunge.dev"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+              <a target="_blank" href="https://github.com/mbunge"><i class="fa fa-github"></i></a>
+          </li>
+        </ul>
       </div>
-      <div class="row">
-        <div class="col-xs-8">
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox"> Remember Me
-            </label>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
-        </div>
-        <!-- /.col -->
-      </div>
-    </form>
-
-    <div class="social-auth-links text-center">
-      <p>- OR -</p>
-      <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
-        Facebook</a>
-      <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
-        Google+</a>
+      <!-- /.col -->
     </div>
-    <!-- /.social-auth-links -->
-
-    <a href="#">I forgot my password</a><br>
-    <a href="register.html" class="text-center">Register a new membership</a>
-
+    <p>Copyright &copy; 2015 <b><a href="http://www.marco-bunge.com" target="_blank" class="text-black">Marco Bunge</a>. All rights reserved. <a href="http://www.marco-bunge.com/about/" target="_blank">Imprint</a></p>
   </div>
-  <!-- /.login-box-body -->
 </div>
-<!-- /.login-box -->

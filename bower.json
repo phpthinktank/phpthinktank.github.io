@@ -1,0 +1,29 @@
+{
+  "name": "phpthinktank.github.io",
+  "version": "1.0.0",
+  "homepage": "http://www.phpthinktank.de",
+  "authors": [
+    "Marco Bunge <mab@grannyandsmith.com>"
+  ],
+  "description": "PHPThinktank documentations and blog",
+  "main": "index.html",
+  "keywords": [
+    "php",
+    "framework",
+    "micro",
+    "orm",
+    "agnostic"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "components-font-awesome": "~4.5.0"
+  }
+}

@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    {% include head.html %}    
-</head>
-
-<body class="hold-transition skin-purple-light layout-top-nav {{bodyclass}}">
-    {% include header.html %}
-    <div class="wrapper">
+---
+layout: blank
+bodyclass: "blue-grey lighten-5"
+---
+{% include header.html %}
+    <main class="container">
     {{content}}
-    {% include footer.html %}
-    </div>
-</body>
-</html>
+    </main>
+{% include footer.html %}
+
+

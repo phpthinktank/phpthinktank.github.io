@@ -1,28 +1,29 @@
 <!-- Footer -->
-<footer class="main-footer">
-<div class="container">
-    <div class="pull-right hidden-xs">
-    <ul class="list-inline text-center">
-        <li>
-            <a target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i></a>
-        </li>
-        {% if site.twitter_username %}
-        <li>
-            <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
-        </li>
-        {% endif %}
-        {% if site.facebook_username %}
-        <li>
-            <a target="_blank" href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook"></i></a>
-        </li>
-        {% endif %}
-        {% if site.github_username %}
-        <li>
-            <a target="_blank" href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
-        </li>
-        {% endif %}
-    </ul>
+<footer class="page-footer indigo lighten-5">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5>{{ site.title }}</h5>
+                <p>We are a group of people which are developing concepts and framework agnostic components for the php
+                    world.</p>
+            </div>
+            <div class="col l6 s12">
+                <h5>Members</h5>
+                <p>If you would like to become a member, simply create an issue. Please wrote a word or two about you
+                    and your motives to join the {{ site.title }}.</p>
+                <div>
+                    <div class="chip white">
+                        <img src="https://pbs.twimg.com/profile_images/562885201978609664/OvWFAmeE.jpeg"
+                             alt="Marco Bunge">
+                        <a target="_blank" href="https://twitter.com/makk_eightbit">Marco Bunge</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <strong>Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</strong> All rights reserved.
-</div><!-- /.container -->
+    <div class="footer-copyright">
+        <div class="container">
+            <span class="black-text">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}. All rights reserved.</span>
+        </div>
+    </div>
 </footer>

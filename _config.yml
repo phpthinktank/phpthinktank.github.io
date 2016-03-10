@@ -1,5 +1,5 @@
 # Site settings
-title: PHP ThinkTank
+title: "php ThinkTank"
 header-img: img/default.jpg
 email: mjls@web.de
 description: "This is a collection of framework agnostic packages developed by Marco Bunge"
@@ -8,13 +8,14 @@ url: "http://marco-bunde.de"
 twitter_username: makk_eightbit
 github_username:  mbunge
 facebook_username:  marco.bunge.dev
-highlighter_theme: solarized
+
+# Gems
+gems: ["jekyll-paginate"]
 
 # Build settings
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
 permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md", "assets/components/AdminLTE/pages", "_draft"]

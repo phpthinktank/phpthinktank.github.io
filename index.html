@@ -1,33 +1,19 @@
 ---
-layout: blank
-bodyclass: "login-page"
+layout: default
 ---
-<div class="login-box">
-  <div class="login-logo">
-    <a href="/"><b>PHP</b>ThinkTank</a>
-  </div>
-  <!-- /.login-logo -->
-  <div class="login-box-body">
-    <div class="row">
-      <p class="col-12">This is a collection of framework agnostic packages developed by <a href="http://www.marco-bunge.com" target="_blank">Marco bunge</a></p>
-      <div class="col-12">
-      {% for package in site.data.packages %}
-        <article>
-          <h1><a class="text-purple" href="{{package.link}}" target="blank">{{package.name}}</a></h1>
-          <p><a class="text-purple" href="{{package.link}}" target="blank">{{package.description}}</a> <span class="label label-{% if package.state == "stable" %}success{% elsif package.state == "development" %}warning{% else %}default{% endif %}">{{package.state}}</span></p>
-        </article>
-      {% endfor %}
-      </div>
-      <div class="col-12">
-        <h3>Social networks:</h3>
-        <div class="social-auth-links">
-          <a href="https://twitter.com/makk_eightbit" class="btn btn-block btn-social btn-twitter btn-flat"><i class="fa fa-twitter"></i> @makk_eightbit</a>
-          <a href="https://facebook.com/marco.bunge.dev" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> @marco.bunge.dev</a>
-          <a href="https://github.com/phpthinktank" class="btn btn-block btn-social btn-github btn-flat"><i class="fa fa-github"></i> phpthinktank</a>
-        </div>
-      </div>
-      <!-- /.col -->
+<div class="row">
+    <div class="col s12">
+        <h1>Components</h1>
     </div>
-    <p>Copyright &copy; 2015 <b><a href="http://www.marco-bunge.com" target="_blank" class="text-black">Marco Bunge</a>. All rights reserved. <a href="http://www.marco-bunge.com/about/" target="_blank">Imprint</a></p>
-  </div>
+    <div class="col s12 m6">
+        <div class="card grey lighten-4">
+            <div class="card-content">
+                <a href="/docs/turbine/" class="card-title">Turbine - Micro framework</a>
+                {% capture documentation %}{% include docs/turbine/intro.md %}{% endcapture %}
+                {{ documentation | markdownify }}
+            </div>
+        </div>
+    </div>
 </div>
+
+

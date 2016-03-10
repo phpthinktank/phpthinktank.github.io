@@ -1,0 +1,18 @@
+{% assign jqueryJs = "/assets/components/jquery/dist/jquery.js" %}
+{% assign materializeJs = "/assets/components/materialize/dist/js/materialize.js" %}
+{% assign scrollSpyJs = "/assets/fixes/materialize/js/scrollspy.js" %}
+<script type="text/javascript" src="{{ jqueryJs | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ materializeJs | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ scrollSpyJs | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+    (function ($, document, window) {
+        $(document).ready(function () {
+            $(".button-collapse").sideNav();
+            $('.meta-info-wrapper .meta-info').pushpin({
+                top: $('.meta-info-wrapper').offset().top,
+                offset: $('.nav-wrapper').height()
+            });
+            $('.scrollspy').scrollSpy();
+        });
+    })(jQuery, document, window);
+</script>

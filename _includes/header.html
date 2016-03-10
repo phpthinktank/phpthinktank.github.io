@@ -1,14 +1,16 @@
-    <header class="main-header">
-        <nav class="navbar navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <a href="./" class="navbar-brand"><b>PHP</b>thinktank.de</a>
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                <i class="fa fa-bars"></i>
-              </button>
-            </div>
-            {% include nav/main.html %}
-            
-          </div><!-- /.container-fluid -->
-        </nav>
-      </header>
+<header>
+    <nav class="navbar-fixed white">
+        <div class="nav-wrapper">
+            <a class="brand-logo black-text"
+               href="{{ site.baseurl }}/">{{ site.title }}</a>
+            <ul class="right hide-on-med-and-down">
+                {% include nav.html %}
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse black-text"><i class="mdi-navigation-menu"></i></a>
+        </div>
+        <div class="divider"></div>
+    </nav>
+    <ul id="slide-out" class="side-nav">
+        {% include nav.html %}
+    </ul>
+</header>

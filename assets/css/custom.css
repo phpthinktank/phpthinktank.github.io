@@ -9,8 +9,12 @@ main {
 }
 
 .brand-logo {
-    font-size: 1.8em;
-    padding-left: 16px;
+    font-size: 1.8em !important;
+    padding-left: 16px !important;
     font-weight: 300;
     text-transform: uppercase;
+}
+
+nav ul a {
+    color: #000000;
 }

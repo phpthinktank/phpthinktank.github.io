@@ -1,7 +1,7 @@
 {% assign materializeCss = "/assets/components/materialize/dist/css/materialize.min.css" %}
 {% assign fontAwesomeCss = "/assets/components/components-font-awesome/css/font-awesome.min.css" %}
-{% assign syntaxCss = "/assets/css/custom.css" %}
 {% assign syntaxCss = "/assets/css/syntax.css" %}
+{% assign customCss = "/assets/css/custom.css" %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,5 +16,5 @@
     <!-- Materialize 3.3.5 -->
     <link rel="stylesheet" href="{{ materializeCss | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ fontAwesomeCss | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ customCss | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ syntaxCss | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ customCss | prepend: site.baseurl }}">

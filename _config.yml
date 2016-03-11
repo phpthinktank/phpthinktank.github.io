@@ -1,12 +1,12 @@
 # Site settings
-title: "php ThinkTank"
+title: "PHP THINKTANK"
 header-img: img/default.jpg
 email: mjls@web.de
-description: "This is a collection of framework agnostic packages developed by Marco Bunge"
+description: "We are a group of people which are developing concepts and framework agnostic components for the php world."
 baseurl: ""
 url: "http://marco-bunde.de"
 twitter_username: makk_eightbit
-github_username:  mbunge
+github_username:  phpthinktank
 facebook_username:  marco.bunge.dev
 
 # Gems

@@ -18,3 +18,53 @@ main {
 nav ul a {
     color: #000000;
 }
+
+/* BLOG */
+
+.blog-roll h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.blog-roll .chip {
+    margin-bottom: 1rem;
+}
+
+.post-1 .blog-roll h1 {
+    font-size: 2.8rem;
+}
+
+.post-1 .blog-roll .card-image {
+    height: 320px;
+}
+
+.post-1 .blog-roll {
+    height: auto;
+}
+
+.blog-roll .card-content {
+    max-height: none;
+}
+
+.blog-roll .card-image {
+    overflow: hidden;
+}
+
+.blog-roll .card-title {
+    z-index: 2;
+}
+
+.blog-roll .card-image img{
+    position: relative;
+    margin-top: -20%;
+}
+
+.blog-roll .card-image .image:before {
+    content: " ";
+    display: block;
+    width: 2000px;
+    height: 600px;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}

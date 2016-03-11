@@ -1,0 +1,28 @@
+{% for post in paginator.posts %}
+<div class="col {% if forloop.index == 1 %}s12{% else %}s12 l6{% endif %} post-{{ forloop.index }}">
+    <article class="card {% if forloop.index == 1 %}medium{% else %}small{% endif %} blog-roll" itemscope
+             itemtype="http://schema.org/BlogPosting">
+        <div class="card-image">
+            <span class="image"><img itemprop="image"
+                                     src="{{ site.baseurl }}/{% if post.header-img %}{{ post.header-img }}{% else %}{{ site.header-img }}{% endif %}"
+                                     alt="{{ post.title }}"></span>
+            <span class="card-title">
+                <h1 itemprop="headline" class="post-title"><a class="white-text"
+                                                              href="{{ post.url | prepend: site.baseurl }}">{{
+                    post.title }}</a></h1>
+            </span>
+        </div>
+        <meta itemprop="datePublished" content="{{ post.date }}">
+        {% if post.subtitle %}
+        <div class="card-content">
+
+            <span class="chip">Posted by <span itemprop="author">{% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}</span> on {{ post.date | date: "%B %d, %Y" }}</span>
+            <p itemprop="description" class="post-subtitle">
+                <a class="blue-grey-text text-darken-3" href="{{ post.url | prepend: site.baseurl }}">{{ post.subtitle
+                    }}</a>
+            </p>
+        </div>
+        {% endif %}
+    </article>
+</div>
+{% endfor %}

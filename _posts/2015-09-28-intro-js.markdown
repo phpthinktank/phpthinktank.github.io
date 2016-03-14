@@ -1,0 +1,86 @@
+---
+layout:     post
+title:      "Intro.js"
+subtitle:   "Fast and easy product introductions"
+date:       2015-09-28 12:36:19
+author:     "Marco Bunge"
+header-img: "img/modern-work-de.jpeg"
+series: "application development"
+tags:
+ - Javascript
+ - JS
+ - development
+ - how-to
+---
+
+Usabli.ca has published a nice introduction tool for your products called Intro.js. They are known for their comparision table <a href="http://usablica.github.io/front-end-frameworks/compare.html" target="_blank">CSS Frontend Frameworks</a>
+
+## Getting started
+
+### Download all sources with Bower
+
+`bower install intro.js --save`
+
+These sources will be loaded in your _bower\_components_ folder.
+
+<div class="callout callout-info">
+    <h4>Tip</h4>
+    <p>To find the correct bower folder, check out your .bowerrc and look for your "directory" option. If you don't have a .bowerrc file, your default folder will be <i>bower_components</i></p>
+</div>
+
+### Build your HTML
+
+Intro.js is providing a simple api. We could add a _data-step_ attribute to an element to attach a step. Optionally we could set a step title by adding a _data-intro_ attribute.
+
+Now we need to attach a click event to any element - we use a button with an id - which is executing `introJs().start()`.
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro.js sample</title>
+
+    <link rel="stylesheet" href="./bower_components/intro.js/introjs.css">
+    <link rel="stylesheet" href="./bower_components/intro.js/themes/introjs-dark.css">
+</head>
+<body>
+
+<div>
+    <button id="introStart">Start Intro.JS Demo</button>
+    <p data-step="1" data-intro="Step 1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, consequatur corporis doloremque ea eius eligendi error nesciunt nisi non odio odit quas qui quis sapiente sequi veritatis, vero voluptate voluptatem.</p>
+    <p data-step="2" data-intro="Step 2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, consequatur corporis doloremque ea eius eligendi error nesciunt nisi non odio odit quas qui quis sapiente sequi veritatis, vero voluptate voluptatem.</p>
+    <p data-step="3" data-intro="Step 3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, consequatur corporis doloremque ea eius eligendi error nesciunt nisi non odio odit quas qui quis sapiente sequi veritatis, vero voluptate voluptatem.</p>
+    <p data-step="4" data-intro="Step 4">Finish</p>
+</div>
+
+<script type="text/javascript" src="./bower_components/intro.js/intro.js"></script>
+<script type="text/javascript">
+    (function(introJs){
+        //attach click event to start our intro
+        document.getElementById('introStart').onclick = function(){
+            introJs().start();
+        };
+    })(introJs);
+</script>
+</body>
+</html>
+```
+
+Gratulations we build our own product presentation within minutes.
+
+### What's next?
+
+Intro.js is providing more custom data attributes, JavaScript functions and events (like `introJs.start()`) to create more interaction with the user.
+
+Watch the <a href="http://usablica.github.io/intro.js/example/index.html" target="_blank">examples</a> or the <a href="https://github.com/usablica/intro.js#api" target="_blank">api</a> to get fancy with Intro.js. You also could use these nice <a href="http://code.mendhak.com/angular-intro.js/example/index.html" target="_blank">angular directives</a> for your awesome angular app.
+
+## At least...
+
+Your a welcome to comment on this post with your own intros, questions or expierences.
+
+## Links
+
+- <a href="http://usablica.github.io/intro.js/" target="_blank">Intro.js</a>
+- <a href="http://code.mendhak.com/angular-intro.js/example/index.html" target="_blank">Intro.js angular directives</a>
+- <a href="https://twitter.com/usablica" target="_blank">@usablica on twitter</a>
